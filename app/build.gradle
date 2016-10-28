@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 20
+    compileSdkVersion 21
     buildToolsVersion "24.0.0"
 
     defaultConfig {
         applicationId "com.rms_tablet"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 21
     }
 
@@ -20,4 +20,5 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:20.0.0'
+    compile project(':xwalk_core_library-17.46.448.10-arm')
 }

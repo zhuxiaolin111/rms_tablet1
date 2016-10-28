@@ -2,17 +2,21 @@ package com.rms_tablet;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
+
+import org.xwalk.core.XWalkResourceClient;
+import org.xwalk.core.XWalkUIClient;
+import org.xwalk.core.XWalkView;
 
 public class MainActivity extends Activity {
+	private XWalkView xWalkView;
 	private WebView mWebView;
-	private String siteUrl = UrlAddress.url + "tablet/";
+	private String siteUrl = UrlAddress.url;
 	private String appLang = "chinese";
 	
 	@Override
@@ -30,7 +34,38 @@ public class MainActivity extends Activity {
 	}
 	
 	public void startApp(){
-		mWebView = (WebView) findViewById(R.id.webView);
+		xWalkView= (XWalkView) findViewById(R.id.webView);
+		xWalkView.load("javascript:document.body.contentEditable=true;", null);
+		xWalkView.addJavascriptInterface(new JsInterface(this), "gou");
+		xWalkView.setUIClient(new XWalkUIClient(xWalkView));
+		xWalkView.setOnLongClickListener(new View.OnLongClickListener() {
+			@Override
+			public boolean onLongClick(View v) {
+				return true;
+			}
+		});
+		xWalkView.setResourceClient(new XWalkResourceClient(xWalkView){
+			@Override
+			public void onLoadFinished(XWalkView view, String url) {
+				super.onLoadFinished(view, url);
+			}
+			@Override
+			public void onLoadStarted(XWalkView view, String url) {
+				super.onLoadStarted(view, url);
+			}
+		});
+		if (getResources().getConfiguration().locale.getCountry().equals("CN")) {
+			appLang = "chinese";
+		} else if (getResources().getConfiguration().locale.getCountry()
+				.equals("KR")) {
+			appLang = "korean";
+		} else {
+			appLang = "english";
+		}
+		Log.d("TESTURL:", UrlAddress.url);
+
+		xWalkView.load(UrlAddress.url + "tablet/?appLang=" + appLang,null);
+	/*	mWebView = (WebView) findViewById(R.id.webView);
 		WebSettings setting = mWebView.getSettings();
 		setting.setJavaScriptEnabled(true);
 		setting.setJavaScriptCanOpenWindowsAutomatically(true);
@@ -54,7 +89,14 @@ public class MainActivity extends Activity {
 		}
 		
 		
-		mWebView.loadUrl(siteUrl + "?appLang=" + appLang);
+		mWebView.loadUrl(siteUrl + "?appLang=" + appLang);*/
 	}
 
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			return false;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
 }

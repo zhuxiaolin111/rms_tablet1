@@ -35,6 +35,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.webkit.MimeTypeMap;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -126,19 +127,19 @@ public class SplashActivity extends Activity{
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
 			case XML_PARSER_ERROR:
-				Toast.makeText(getApplicationContext(), "XML parsing exception", Toast.LENGTH_LONG).show();
+				//Toast.makeText(getApplicationContext(), "XML parsing exception", Toast.LENGTH_LONG).show();
 				loadMainUI();
 				break;
 			case IO_ERROR:
-				Toast.makeText(getApplicationContext(), "IO exception", Toast.LENGTH_LONG).show();
+			//	Toast.makeText(getApplicationContext(), "IO exception", Toast.LENGTH_LONG).show();
 				loadMainUI();
 				break;
 			case SERVER_URL_ERROR:
-				Toast.makeText(getApplicationContext(), "Server URL error", Toast.LENGTH_LONG).show();
+			//	Toast.makeText(getApplicationContext(), "Server URL error", Toast.LENGTH_LONG).show();
 				loadMainUI();
 				break;
 			case SERVER_ERROR:
-				Toast.makeText(getApplicationContext(), "Server exception", Toast.LENGTH_LONG).show();
+				//Toast.makeText(getApplicationContext(), "Server exception", Toast.LENGTH_LONG).show();
 				loadMainUI();
 				break;
 			case GET_INFO_SUCCESS:
@@ -171,7 +172,7 @@ public class SplashActivity extends Activity{
 			startActivity(mIntent);
 			finish(); 
 		}catch(Exception ex){
-			Toast.makeText(getApplicationContext(), "First installation, must be upgrade!", Toast.LENGTH_LONG).show();
+			//Toast.makeText(getApplicationContext(), "First installation, must be upgrade!", Toast.LENGTH_LONG).show();
 			showUpdateDialog();
 		}
 		
@@ -332,6 +333,4 @@ public class SplashActivity extends Activity{
 		unregisterReceiver(receiver);
 		
 	}
-	
-	
 }

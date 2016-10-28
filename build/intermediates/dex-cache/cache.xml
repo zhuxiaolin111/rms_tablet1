@@ -2,25 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\mn\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jar="D:\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="24.0.0"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="C:\Users\mn\Desktop\rms_tablet1\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0_bee2350015976a4c974db1731285c91c89e0c3fb.jar" />
+        <dex dex="C:\Users\Administrator\Desktop\android\rms_tablet1\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0_baf21f2e8d76bd1ef98ebb015f18e2b5c7d88d43.jar" />
     </item>
     <item
-        jar="C:\Users\mn\Desktop\rms_tablet1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jar="C:\Users\Administrator\Desktop\android\rms_tablet1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
         jumboMode="false"
         revision="24.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="C:\Users\mn\Desktop\rms_tablet1\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-20.0.0_674cc902181da9c52179078909561b419898b992.jar" />
+        <dex dex="C:\Users\Administrator\Desktop\android\rms_tablet1\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-20.0.0_2dd9758d9780496b036b4480ea5f50fe045b645b.jar" />
     </item>
     <item
-        jar="C:\Users\mn\Desktop\rms_tablet1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jar="C:\Users\Administrator\Desktop\android\rms_tablet1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
         revision="24.0.0"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="C:\Users\mn\Desktop\rms_tablet1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0_15da3be2dd8af5e067aef3b9af90911517425f33.jar" />
+        <dex dex="C:\Users\Administrator\Desktop\android\rms_tablet1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0_87981f9c68efcbf1e1331bab63e606837de5a14d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Desktop\android\rms_tablet1\app\build\intermediates\exploded-aar\rms_tablet1\xwalk_core_library-17.46.448.10-arm\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="52ca7bfc6b538a9ebc1947c0b0e6bacc588b6421">
+        <dex dex="C:\Users\Administrator\Desktop\android\rms_tablet1\app\build\intermediates\pre-dexed\debug\rms_tablet1-xwalk_core_library-17.46.448.10-arm-unspecified_caa620a73fb19592b3ecec30644bdd39e09234fe.jar" />
     </item>
 
 </items>

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\mn\\Desktop\\rms_tablet1\\app\\build\\intermediates\\res\\merged\\debug\\values-en\\values-en.xml",
+        "outputFile": "C:\\Users\\Administrator\\Desktop\\android\\rms_tablet1\\app\\build\\intermediates\\res\\merged\\debug\\values-en\\values-en.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 103
                 },
                 "from": {
-                    "file": "C:\\Users\\mn\\Desktop\\rms_tablet1\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\android\\rms_tablet1\\app\\src\\main\\res\\values-en\\strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 1,
@@ -30,7 +30,7 @@
                     "endOffset": 148
                 },
                 "from": {
-                    "file": "C:\\Users\\mn\\Desktop\\rms_tablet1\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\android\\rms_tablet1\\app\\src\\main\\res\\values-en\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 1,
@@ -49,7 +49,7 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "C:\\Users\\mn\\Desktop\\rms_tablet1\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "file": "C:\\Users\\Administrator\\Desktop\\android\\rms_tablet1\\app\\src\\main\\res\\values-en\\strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 1,
